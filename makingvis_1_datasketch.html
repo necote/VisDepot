@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Making a Case for Data Sketching, Analog Visualization, and Prototyping &#8212; VisDepot: An Introductory Resource for Data Visualization</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Choosing an Existing Vis-Type" href="makingvis_2_preexistingtypes.html" />
+    <link rel="prev" title="Making a Vis: Data Visualization Tools" href="makingvis.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/visdepot_logo_4.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">VisDepot: An Introductory Resource for Data Visualization</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="landing.html">
+   VisDepot: An Introductory Resource for Data Visualization
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="introbackground.html">
+   Practical Fundamentals: A Basic Introduction and Background
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="introbackground_2_historylesson.html">
+     A Quick History Lesson
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="introbackground_3_ethics.html">
+     Preliminary Grounding and Ethical Considerations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="introbackground_1_briefintro.html">
+     A Brief Introduction to Working with Data and Spreadsheets
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="gettingdata.html">
+   “Getting” Data: Questioning, Creating, Sourcing
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gettingdata_1_dataquestioning.html">
+     Data Questioning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gettingdata_2_datacreating.html">
+     Data Creating
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gettingdata_4_datasourcing.html">
+     Data Sourcing
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="datawrangling.html">
+   Data Wrangling, Cleaning, and Exploring
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="makingvis.html">
+   Making a Vis: Data Visualization Tools
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Making a Case for Data Sketching, Analog Visualization, and Prototyping
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="makingvis_2_preexistingtypes.html">
+     Choosing an Existing Vis-Type
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="makingvis_3_toolkit.html">
+     Creating a Data Visualization Toolkit
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="additionalresources.html">
+   Additional Resources
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="additionalresources_1_technical.html">
+     Technical/Practical Resources
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="additionalresources_2_historical.html">
+     Historical/Conceptual Resources
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="additionalresources_3_social.html">
+     Podcasts, Blogs, &amp; Social Media
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/makingvis_1_datasketch.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-few-perspectives-from-the-field">
+   A Few Perspectives from the Field
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#read-further">
+   Read Further
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="making-a-case-for-data-sketching-analog-visualization-and-prototyping">
+<h1>Making a Case for Data Sketching, Analog Visualization, and Prototyping<a class="headerlink" href="#making-a-case-for-data-sketching-analog-visualization-and-prototyping" title="Permalink to this headline">¶</a></h1>
+<p>Sketching data by hand, either for a prototype or for making analogue visualizations, has its benefits. Many people spend a long time working on the code of the visualization and trying to get it to work without questioning whether a specific model is the best way to present their information. Testing prototypes by hand can be quick and relatively painless compared to starting with code right away. And, it’s important to remember that many highly successful visualizations are never coded but drawn or physically built.</p>
+<p>Data artists like Stefanie Posavec, Giorgia Lupi, Federica Fragapane, and Mona Chalabi are well known for their hand-drawn visualizations. Analogue methods have allowed them to create truly novel works, rather than trying to fit information into existing chart forms that may be inadequate for the story you want to tell.</p>
+<p>This section will offer a few perspectives from makers on data sketching.</p>
+<div class="section" id="a-few-perspectives-from-the-field">
+<h2>A Few Perspectives from the Field<a class="headerlink" href="#a-few-perspectives-from-the-field" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=wo23BmoWuBs">“Sketching Data Visualization”</a> a Data Visualization Society Fireside Chat</p></li>
+<li><p><a class="reference external" href="https://vimeo.com/287094544">“Anoraks and the Analogue”</a> by Stefanie Posavec</p></li>
+<li><p><a class="reference external" href="https://medium.com/nightingale/why-you-should-close-the-computer-for-your-next-data-visualization-3636663d0b35">“Why You Should Close the Computer for Your Next Data Visualization”</a> by Ripley Cleghorn</p></li>
+<li><p><a class="reference external" href="https://public.tableau.com/s/blog/2014/11/drawing-and-data-visualizations-tool-allow-connections-be-made">“Drawing and Data Visualizations”</a> by Giorgia Lupi</p></li>
+<li><p><a class="reference external" href="https://medium.com/nightingale/how-and-why-we-sketch-when-visualizing-data-d843e0ce8c74">“How and Why We Sketch When Visualizing Data”</a> by Dee Williams and Rahul Bhargava</p></li>
+</ul>
+</div>
+<div class="section" id="read-further">
+<h2>Read Further<a class="headerlink" href="#read-further" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>If you are interested in “digital” versions of free-form sketching, you might explore <a class="reference external" href="https://charticulator.com/">Charticulator</a> and <a class="reference external" href="http://data-illustrator.com/tutorial.php">Data-Illustrator</a>, two digital-drawing-specific tools, the Data Ink <a class="reference external" href="https://datainkresearch.github.io/#results">white paper</a> on the value of free from drawing.</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="makingvis.html" title="previous page">Making a Vis: Data Visualization Tools</a>
+    <a class='right-next' id="next-link" href="makingvis_2_preexistingtypes.html" title="next page">Choosing an Existing Vis-Type</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Nicole Cote<br/>
+        
+            &copy; Copyright 2021.<br/>
+          <div class="extra_footer">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> This project is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a> and the <a href="https://choosealicense.com/licenses/mit/">MIT License</a>.
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

@@ -1,0 +1,410 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Creating &#8212; VisDepot: An Introductory Resource for Data Visualization</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Data Sourcing" href="gettingdata_4_datasourcing.html" />
+    <link rel="prev" title="Data Questioning" href="gettingdata_1_dataquestioning.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/visdepot_logo_4.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">VisDepot: An Introductory Resource for Data Visualization</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="landing.html">
+   VisDepot: An Introductory Resource for Data Visualization
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="introbackground.html">
+   Practical Fundamentals: A Basic Introduction and Background
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="introbackground_2_historylesson.html">
+     A Quick History Lesson
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="introbackground_3_ethics.html">
+     Preliminary Grounding and Ethical Considerations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="introbackground_1_briefintro.html">
+     A Brief Introduction to Working with Data and Spreadsheets
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="gettingdata.html">
+   “Getting” Data: Questioning, Creating, Sourcing
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="gettingdata_1_dataquestioning.html">
+     Data Questioning
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Data Creating
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gettingdata_4_datasourcing.html">
+     Data Sourcing
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="datawrangling.html">
+   Data Wrangling, Cleaning, and Exploring
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="makingvis.html">
+   Making a Vis: Data Visualization Tools
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="makingvis_1_datasketch.html">
+     Making a Case for Data Sketching, Analog Visualization, and Prototyping
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="makingvis_2_preexistingtypes.html">
+     Choosing an Existing Vis-Type
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="makingvis_3_toolkit.html">
+     Creating a Data Visualization Toolkit
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="additionalresources.html">
+   Additional Resources
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="additionalresources_1_technical.html">
+     Technical/Practical Resources
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="additionalresources_2_historical.html">
+     Historical/Conceptual Resources
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="additionalresources_3_social.html">
+     Podcasts, Blogs, &amp; Social Media
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/gettingdata_2_datacreating.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#making-a-dataset">
+   Making a Dataset
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#web-scraping">
+     Web-Scraping
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-apis">
+     Using APIs
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#read-further">
+   Read Further
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="data-creating">
+<h1>Data Creating<a class="headerlink" href="#data-creating" title="Permalink to this headline">¶</a></h1>
+<p>Creating your own data allows you to better control many of the previously mentioned considerations. It can also allow for greater variety of possible projects, as you do not have to limit your work by the data others have already collected. In fact, one great/easy place to start can be to simply create data on yourself or your experiences. Small personal data collection can serve as a means of diary-keeping or can simply be an exploratory method requiring little or no technical knowledge.</p>
+<p>If you are interested in telling personal data stories, Giorgia Lupi and Stefanie Posavec’s <a class="reference external" href="https://www.dear-data.com/theproject">“Dear Data”</a> project has provided inspiration for many. The main page of the project site also includes various videos that explain how they developed their visual language and collected data by hand.</p>
+<p>Data artist R. Luke DuBois’ <a class="reference external" href="https://www.ted.com/talks/r_luke_dubois_insightful_human_portraits_made_from_data">“Insightful Human Portraits Made from Data”</a> <em>TedTalk</em> offers another great example of the benefits of not relying on previously existing datasets. The projects he presents use a range of technical and creative methods for data sourcing that might inspire you to scrape data yourself.</p>
+<p>And, Mimi Onuoha’s 2016 artwork <a class="reference external" href="https://mimionuoha.com/the-library-of-missing-datasets">“The Library of Missing Datasets”</a> powerfully speaks to the fact that while numerous datasets do exist, there are many important “missing datasets”: information that is <em>not</em> collected or engaged. Inspired by Onuoha’s work, perhaps you can create a data visualization on important narratives you find to be “missing” as well.</p>
+<p>This section will offer a few basics on creating your own data. It doesn’t attempt to cover <em>all</em> possible ways forward, but offers a few options for you to test things out.</p>
+<div class="section" id="making-a-dataset">
+<h2>Making a Dataset<a class="headerlink" href="#making-a-dataset" title="Permalink to this headline">¶</a></h2>
+<p>Here are a few beginner-to-intermediate ways forward for making a dataset:</p>
+<p>Before you get going, a first recommendation would be to quickly read Caroline Sinders’ <a class="reference external" href="https://carolinesinders.com/wp-content/uploads/2020/05/Feminist-Data-Set-Final-Draft-2020-0526.pdf"><em>Feminist Data Set Toolkit</em></a>, particularly “Chapter 2: Thinking through Feminist Data Collection and Creation.”</p>
+<p>One suggestion would be to now refer back to “A Brief Introduction to Working with Data and Spreadsheets” for any any guidance on spreadsheets generally, and then to make a simple individually collected table of personal data inspired by “Dear Data.” Having a dataset that is very basic, and that you understand because you made it, can help you start to think about what that data can show. If you are working with a coded visualization that you are unfamiliar with, this process will also allow you to know if you “got it right” very quickly, due to its simplicity.</p>
+<p>Working with surveys is another popular option for creating datasets. Here is one tutorial that may help you in that process: <a class="reference external" href="https://monkeylearn.com/blog/survey-analysis/">“Creating and Analyzing Data from a Survey”</a> on Monkey Learn.</p>
+<div class="section" id="web-scraping">
+<h3>Web-Scraping<a class="headerlink" href="#web-scraping" title="Permalink to this headline">¶</a></h3>
+<p>Web-scraping is a very popular way to get data. It (very roughly) refers to using code to pull information from the web to use as data. There are various ways to do this! But, here are a few resources to get you going:</p>
+<ul class="simple">
+<li><p>Sam Lavigne’s tutorial site <a class="reference external" href="https://scrapism.lav.io/"><em>Scrapism</em></a> is a great place to start. It covers the basics of working with the command line, Python, and the Beautiful Soup library.</p></li>
+<li><p>The <a class="reference external" href="https://programminghistorian.org/en/lessons/intro-to-beautiful-soup">“Web-scraping with Beautiful Soup”</a> tutorial by <em>Programming Historian</em> offers another lesson on Beautiful Soup for those who might want to reference more than one guide.</p></li>
+<li><p>And, the <a class="reference external" href="https://eagereyes.org/data/scrape-tables-using-google-docs">“Web-scraping a Table with GoogleDocs”</a> on <em>Eagereyes</em> might be useful specifically for tables.</p></li>
+</ul>
+</div>
+<div class="section" id="using-apis">
+<h3>Using APIs<a class="headerlink" href="#using-apis" title="Permalink to this headline">¶</a></h3>
+<p>Besides web-scraping generally, APIs allow you to access data from web apps (for example Twitter, <em>The New York Times</em>, Rotten Tomatoes, &amp; etc.) that you can then use in your project.</p>
+<p>Here are a few beginner-to-intermediate resources on APIs:</p>
+<ul class="simple">
+<li><p>If you are unfamailar with APIs generally, you might first read <a class="reference external" href="https://medium.com/&#64;perrysetgo/what-exactly-is-an-api-69f36968a41f">“What Exactly is an API”</a> by Perry Eising for a very brief intro.</p></li>
+<li><p>The <a class="reference external" href="https://schoolofdata.org/2013/11/18/web-apis-for-non-programmers/">“Web APIs for Non-Programmers”</a> post on <em>School of Data</em> is a good next stop for more background and practical information.</p></li>
+<li><p>The <a class="reference external" href="https://www.docnow.io/">Documenting the Now</a> project is an excellent resource for working with social media data (esp. Twitter). Their <a class="reference external" href="https://twarc-project.readthedocs.io/en/latest/">twarc</a> tool in particular is worth checking out.</p></li>
+<li><p>Also, useful might be the <a class="reference external" href="https://programminghistorian.org/en/lessons/json-and-jq">“Reshaping JSON”</a> lesson on <em>Programming Historian</em>.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="read-further">
+<h2>Read Further<a class="headerlink" href="#read-further" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Giorgia Lupi and Stefanie Posavec’s book <em>Observe, Collect, Draw: Discover the Patterns in Your Everyday Life</em> is recommended if you can find it at a library. It offers a visual guide for creating personal datasets—filled, with prompts and activities; however, there are many great Lupi and Posavec resources (articles and videos) available for free online that can offer “the gist” of their work/method if the book is not available for you.</p></li>
+<li><p>Many of Sam Lavigne’s <a class="reference external" href="https://lav.io/">artworks</a> involve web scraping and, if this is a space you are interested in, can undoubtedly inspire your own data (art)work.</p></li>
+<li><p><em>Programming Historian</em> has many other <a class="reference external" href="https://programminghistorian.org/en/lessons/">lessons</a> that might be of interest not only for data creation, but also for other tech skills you may be interested in developing. Note: the lessons on this site are aimed at a humanities audience in particular.</p></li>
+<li><p>The <a class="reference external" href="https://kit.exposingtheinvisible.org/en/how/data-acquisition.html">“Data Acquisition for Beginners”</a> post by Tactical Tech (part of their “Exposing the Invisible Kit”) is another useful and thorough resource for getting data.</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="gettingdata_1_dataquestioning.html" title="previous page">Data Questioning</a>
+    <a class='right-next' id="next-link" href="gettingdata_4_datasourcing.html" title="next page">Data Sourcing</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Nicole Cote<br/>
+        
+            &copy; Copyright 2021.<br/>
+          <div class="extra_footer">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> This project is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a> and the <a href="https://choosealicense.com/licenses/mit/">MIT License</a>.
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
