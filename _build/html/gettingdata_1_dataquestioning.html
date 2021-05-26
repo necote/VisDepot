@@ -1,0 +1,453 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Questioning &#8212; VisDepot: An Introductory Resource for Data Visualization</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Data Creating" href="gettingdata_2_datacreating.html" />
+    <link rel="prev" title="“Getting” Data: Questioning, Creating, Sourcing" href="gettingdata.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/visdepot_logo_4.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">VisDepot: An Introductory Resource for Data Visualization</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="landing.html">
+   VisDepot: An Introductory Resource for Data Visualization
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="introbackground.html">
+   Practical Fundamentals: A Basic Introduction and Background
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="introbackground_2_historylesson.html">
+     A Quick History Lesson
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="introbackground_3_ethics.html">
+     Preliminary Grounding and Ethical Considerations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="introbackground_1_briefintro.html">
+     A Brief Introduction to Working with Data and Spreadsheets
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="gettingdata.html">
+   “Getting” Data: Questioning, Creating, Sourcing
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Data Questioning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gettingdata_2_datacreating.html">
+     Data Creating
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gettingdata_4_datasourcing.html">
+     Data Sourcing
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="datawrangling.html">
+   Data Wrangling, Cleaning, and Exploring
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="makingvis.html">
+   Making a Vis: Data Visualization Tools
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="makingvis_1_datasketch.html">
+     Making a Case for Data Sketching, Analog Visualization, and Prototyping
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="makingvis_2_preexistingtypes.html">
+     Choosing an Existing Vis-Type
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="makingvis_3_toolkit.html">
+     Creating a Data Visualization Toolkit
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="additionalresources.html">
+   Additional Resources
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="additionalresources_1_technical.html">
+     Technical/Practical Resources
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="additionalresources_2_historical.html">
+     Historical/Conceptual Resources
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="additionalresources_3_social.html">
+     Podcasts, Blogs, &amp; Social Media
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/gettingdata_1_dataquestioning.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#preliminary-questions-to-get-us-started">
+   Preliminary Questions to Get Us Started
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#questions-for-you">
+   Questions for You
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#questions-for-the-dataset-both-previously-existing-data-files-and-any-datasets-you-create">
+   Questions for the Dataset (both previously existing data files and any datasets you create)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#questions-for-your-data-story-or-overall-narrative">
+   Questions for Your Data “Story” or Overall Narrative
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#questioning-data-s-usability">
+   Questioning Data’s Usability
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#read-further">
+   Read Further
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="data-questioning">
+<h1>Data Questioning<a class="headerlink" href="#data-questioning" title="Permalink to this headline">¶</a></h1>
+<p>The truth is that just having the technical (or other: drawing, crafting, “making”) skills to create a visualization is not enough. A correctly made (from a technological standpoint) visualization with little thought behind it is kind of like a grammatically correct book about a poorly researched topic: it might not offer anything useful, and potentially worse, it might do more harm than good.</p>
+<p>The idea behind your project is everything. Whether you are doing work for an art collective or a corporate employer you will not get far without flexing some creative <em>and</em> critical muscles. Unfortunately, as Timnit Gebru et al. discuss in their article <a class="reference external" href="https://arxiv.org/abs/1803.09010">“Datasheets for Datasets”</a>, while datasets can be easy to find online, they often do not come with clear background information. Therefore, since the thought behind the project is going to drive the product, significant data questioning on our part is an essential place to start.</p>
+<p>This section will cover the basics of data questioning for data/visualization projects. You will notice that many of these questions overlap and circle-back to one another…that is the point!</p>
+<div class="section" id="preliminary-questions-to-get-us-started">
+<h2>Preliminary Questions to Get Us Started<a class="headerlink" href="#preliminary-questions-to-get-us-started" title="Permalink to this headline">¶</a></h2>
+<p>The questioning necessary for a data project can roughly fall into three buckets:</p>
+<p><strong>Questioning</strong></p>
+<ul class="simple">
+<li><p><strong>You:</strong> What data am I looking to use for this project and why?</p></li>
+<li><p><strong>The Dataset:</strong> Where/how do I get a dataset and how do I know it is reliable?</p></li>
+<li><p><strong>The Data “Story”:</strong> What story or overall narrative am I trying to communicate with this data, why, and do the story and data fit?</p></li>
+</ul>
+<p><strong>Goals</strong></p>
+<ul class="simple">
+<li><p>To provide a few macro-level questions about data/collection/visualization to consider before starting visualization work.</p></li>
+<li><p>To start thinking about where and how to source data for a visualization.</p></li>
+</ul>
+</div>
+<div class="section" id="questions-for-you">
+<h2>Questions for You<a class="headerlink" href="#questions-for-you" title="Permalink to this headline">¶</a></h2>
+<p><strong>Question…</strong></p>
+<ul class="simple">
+<li><p><strong>Your role in this:</strong></p>
+<ul>
+<li><p>Why you are using this data/making this visualization (i.e. what is your goal and why these materials)?</p></li>
+<li><p>Are you generating a meaningful use of this data and/or a meaningful project?</p></li>
+<li><p>Why are you telling this data story?</p></li>
+<li><p>Why do you feel you are able to, well positioned to, or even <em>should</em> tell this story?</p></li>
+</ul>
+</li>
+</ul>
+<p>First of all, if you do not care about the data or project, chances are no one else does either. Further, data storage and tools are not free from ethical issues or environmental impact. This is important to always have in mind, but especially in considering how and if to pursue a new project.</p>
+<p>Keep in mind both your own situation and how you connect with this material. As discussed in the previous section, <a class="reference external" href="https://www.manifestno.com/">“The Feminist Data Manifest-No”</a> is a particularly helpful guide for thinking through these kinds of questions and helped to inspire the below. I would <strong>strongly</strong> encourage you to check it out now if you have not already!</p>
+</div>
+<div class="section" id="questions-for-the-dataset-both-previously-existing-data-files-and-any-datasets-you-create">
+<h2>Questions for the Dataset (both previously existing data files and any datasets you create)<a class="headerlink" href="#questions-for-the-dataset-both-previously-existing-data-files-and-any-datasets-you-create" title="Permalink to this headline">¶</a></h2>
+<p><strong>Question…</strong></p>
+<ul class="simple">
+<li><p><strong>The data creator:</strong> Who made the dataset, when, where, how, and why did they do it? And, does that all seem reliable/ethical? How do you know?</p></li>
+<li><p><strong>The circulation and creation of data:</strong> How did the data get to you? Where did you find it? Why is it available? Who was the intended audience? How was this data gathered/created and transformed into the dataset? And, does it seem trustworthy given all of this? If so, why?</p></li>
+<li><p><strong>The data file (high level):</strong> Can you actually understand the data file? For example: What are the different variables? What do the columns and rows mean? What are the data types for each row (categorical, numerical, time/date &amp; etc.)? And, are these categories consistent?</p></li>
+<li><p><strong>The data file (close reading):</strong> Is it usable? Here this may mean: are there inconsistencies or discrepancies? Is there missing information (nan/missing/wrong value types) that can be fixed? If they can’t be fixed can/should this dataset be used (i.e. is that essential information)? Does the data seem up to date? How do you know?</p></li>
+<li><p><strong>The “narrative” of the dataset:</strong> What does the data <em>say</em> it represents and how does it do that? (i.e. What variables are being used to mean or to indicate what results?) Does this seem reliable, correct, responsible, reasonable? How do you know?</p></li>
+<li><p><strong>Representation:</strong> Who/what/where does the data represent? Was this made <em>by</em> a community or <em>about</em> a community? Is there a discrepancy between who made the data and who the data is about or concerned with?</p></li>
+</ul>
+<p><strong>Do a few quick validity checks!</strong><br />
+There are many data files online that are incomplete: perhaps they were created for a very specific purpose or have not been kept up to date. In addition to the above questioning, do a few random searches in the data for known information.</p>
+<p>As a very simple and very “low stakes” example: I’ve come across a dataset that said it identifies all the breweries in Vermont, but when I searched the data for some of my favorites, they were missing. This allowed me to realize the file was based on a data source that was neither kept up to date nor comprehensive in its collection processes. However, depending on the data being used, these stakes can be raised exponentially.</p>
+</div>
+<div class="section" id="questions-for-your-data-story-or-overall-narrative">
+<h2>Questions for Your Data “Story” or Overall Narrative<a class="headerlink" href="#questions-for-your-data-story-or-overall-narrative" title="Permalink to this headline">¶</a></h2>
+<p><strong>Question…</strong></p>
+<ul class="simple">
+<li><p><strong>The audience/use:</strong> Who are you telling this story or narrative to and why?</p></li>
+<li><p><strong>Your approach:</strong> Do the data points you’ve chosen to focus on reflect the narrative you are trying to get across? How are you sure?</p></li>
+<li><p><strong>Uncertain/missing data:</strong> Do you have all the information you need to tell this data story? Is there missing or uncertain data? If so, have you considered whether the story can still be told given this? If you think it can: Why? And, how do you plan to represent missing and uncertain information?</p></li>
+</ul>
+<p><strong>And, do it all over again!</strong> Go back through the above “Qs for You” and “Qs for the Dataset,” but this time consider how they pertain to YOUR narrative and your use of the data.</p>
+</div>
+<div class="section" id="questioning-data-s-usability">
+<h2>Questioning Data’s Usability<a class="headerlink" href="#questioning-data-s-usability" title="Permalink to this headline">¶</a></h2>
+<p>There are <em>so many</em> datasets that we should just not use for a visualization! I cannot cover the breadth of such reasons here, but a few thoughts to keep in mind might be:</p>
+<p>Some data might be considered “bad” because it is unusable on a technical level. This might include, for example, incomplete data (data that are missing but essential for the work), inconsistent data, incorrect parameters (the data collected does not “do” what the people who complied the set say it does/what you need for the project), outdated information, &amp; etc.</p>
+<p>And, importantly, other data may seem <em>theoretically</em> usable from a technical standpoint, but have been unethically sourced or unthoughtfully representing the subject. In a similar vein, data might also be “bad” because there is no meaningful or justifiable reason to use it (either generally or for your project specifically).</p>
+<p>These are just a few examples of what might indicate “unusable” data, and should not be read as an exhaustive list. For that reason, continuously trying to question your data and your application of that content in visualization is an important starting point for any project.</p>
+</div>
+<div class="section" id="read-further">
+<h2>Read Further<a class="headerlink" href="#read-further" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>First, if you have not read the above mentioned <a class="reference external" href="https://arxiv.org/abs/1803.09010">“Datasheets for Datasets”</a> by Timnit Gebru et al. this is a good resource to become familiar with.</p></li>
+<li><p>The Open Data Institute (ODI)’s <a class="reference external" href="https://theodi.org/wp-content/uploads/2019/07/ODI-Data-Ethics-Canvas-2019-05.pdf">“Data Ethics Canvas”</a> might be a useful tool for considering data ethics issues from the start of any project. This is only one such resource/toolkit created by ODI. Others, including more information on data ethics, can be found <a class="reference external" href="https://theodi.org/service/tools-resources/">here</a> on their site.</p></li>
+<li><p>Depending on the data you are using and/or where you are located you may need to be aware of GDPR. Tactical Tech’s <a class="reference external" href="https://ourdataourselves.tacticaltech.org/posts/20a_GDPR_checklist/">“Last-Minute GDPR Checklist for Civil Society Organisations”</a> is a useful place to start.</p></li>
+<li><p>For a broader understanding of ethics in the field danah boyd et al.’s <a class="reference external" href="https://datasociety.net/wp-content/uploads/2016/09/SupportingEthicsDataResearch_Sept2016.pdf">“Supporting Ethical Data Research: An Exploratory Study of Emerging Issues in Big Data and Technical Research”</a> is a useful read.</p></li>
+<li><p>For one example of dealing with uncertainty you might check out the Junk Charts post <a class="reference external" href="https://junkcharts.typepad.com/junk_charts/2019/10/who-is-a-millennial-an-example-of-handling-uncertainty.html">“Who is a millennial? An example of handling uncertainty”</a>.</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="gettingdata.html" title="previous page">“Getting” Data: Questioning, Creating, Sourcing</a>
+    <a class='right-next' id="next-link" href="gettingdata_2_datacreating.html" title="next page">Data Creating</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Nicole Cote<br/>
+        
+            &copy; Copyright 2021.<br/>
+          <div class="extra_footer">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> This project is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a> and the <a href="https://choosealicense.com/licenses/mit/">MIT License</a>.
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

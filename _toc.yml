@@ -1,0 +1,25 @@
+# Table of content
+# Learn more at https://jupyterbook.org/customize/toc.html
+#
+- file: landing
+- file: introbackground
+  sections:
+    - file: introbackground_2_historylesson
+    - file: introbackground_3_ethics
+    - file: introbackground_1_briefintro
+- file: gettingdata
+  sections:
+    - file: gettingdata_1_dataquestioning
+    - file: gettingdata_2_datacreating
+    - file: gettingdata_4_datasourcing
+- file: datawrangling
+- file: makingvis
+  sections:
+    - file: makingvis_1_datasketch
+    - file: makingvis_2_preexistingtypes
+    - file: makingvis_3_toolkit
+- file: additionalresources
+  sections:
+    - file: additionalresources_1_technical
+    - file: additionalresources_2_historical
+    - file: additionalresources_3_social

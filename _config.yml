@@ -1,0 +1,14 @@
+#######################################################################################
+# A default configuration that will be loaded for all jupyter books
+# See the documentation for help and more options: 
+# https://jupyterbook.org/customize/config.html
+
+#######################################################################################
+# Book settings
+title                       : "VisDepot: An Introductory Resource for Data Visualization"  # The title of the book. Will be placed in the left navbar.
+author                      : Nicole Cote  # The author of the book
+copyright                   : "2021"  # Copyright year to be placed in the footer
+logo                        : visdepot_logo_4.png  # A path to the book logo
+
+html:
+  extra_footer              : <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> This project is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a> and the <a href="https://choosealicense.com/licenses/mit/">MIT License</a>. 
