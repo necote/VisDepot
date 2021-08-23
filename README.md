@@ -3,6 +3,7 @@ VisDepot: An Introductory Resource for Data Visualization
 
 [![DOI](https://zenodo.org/badge/367454565.svg)](https://zenodo.org/badge/latestdoi/367454565)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![Jupyter Book Badge](https://jupyterbook.org/badge.svg)](https://necote.github.io/VisDepot/)
 
 ![This is a screenshot of the homepage of the VisDepot homepage. It displays the left navigation bar that displays the project subsections, the project title and a brief overview, and the acknowledgement section.](/figs/visdepot.png "VisDepot")
 
@@ -27,7 +28,7 @@ Citation
 
 Nicole Cote. (2021). VisDepot: An Introductory Resource for Data Visualization, v1.0.1. https://doi.org/10.5281/zenodo.5234286
 
-```text
+```
 @misc{Cote_VisDepot_An_Introductory_2021,
 author = {Cote, Nicole},
 doi = {10.5281/zenodo.5234286},
