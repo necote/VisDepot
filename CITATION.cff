@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this resource, please cite it as below."
+authors:
+- family-names: "Cote"
+  given-names: "Nicole"
+title: "VisDepot: An Introductory Resource for Data Visualization"
+version: 1.0.1
+doi: 10.5281/zenodo.5234286
+date-released: 2021-08-22
+url: "https://necote.github.io/VisDepot/"
