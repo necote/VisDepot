@@ -20,4 +20,4 @@ Many of the subsections in this book contain "Read Further" information. There i
 
 **Suggested Citation**
 
-Nicole Cote, *VisDepot: An Introductory Resource for Data Visualization*, 2021, (Zenodo link TBD).
+Nicole Cote. (2021). VisDepot: An Introductory Resource for Data Visualization, v1.0.1. https://doi.org/10.5281/zenodo.5234286
