@@ -4,7 +4,7 @@
 - [Flowing Data](https://flowingdata.com/) 
 - [Information is Beautiful](https://informationisbeautiful.net/)  
 - [Junk Charts](https://junkcharts.typepad.com/junk_charts/)  
-- [Nightingale](https://medium.com/nightingale) The Journal of the Data Visualization Society **Note:** their new site NightingaleDVS.com is due to launch June 8, 2021
+- [Nightingale](https://nightingaledvs.com/) The Journal of the Data Visualization Society
 - [Open Access Vis](http://oavis.org/)  
 - [The Pudding](https://pudding.cool/)
 - [The Upshot](https://www.nytimes.com/section/upshot)
